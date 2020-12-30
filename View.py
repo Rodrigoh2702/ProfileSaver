@@ -19,7 +19,7 @@ candidateLinkLabel.grid(row=0, column=0, sticky=W)
 candidateLinkEntry = Entry(app, textvariable=candidateLinkText)
 candidateLinkEntry.grid(row=0, column=1)
 
-# Quien lo añadio
+# Persona que lo añadio
 userNameText = StringVar()
 userNameLabel = Label(app, text='Lo añade:', font=('bold', 14), pady=20)
 userNameLabel.grid(row=1, column=0, sticky=W)

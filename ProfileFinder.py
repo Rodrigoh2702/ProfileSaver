@@ -4,7 +4,7 @@ from tkinter import messagebox
 
 
 def getProfile(link, account, password):
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome("Drivers/chromedriver.exe")
     driver.maximize_window()
     driver.get("https://www.linkedin.com")
 
@@ -37,3 +37,4 @@ def getProfile(link, account, password):
     profileId = link.split("/")[4]
     driver.close()
     return profileName, profilePosition, profileId
+
